@@ -84,7 +84,7 @@
   .navigation__contacts {
     display: flex;
     flex-direction: column;
-    margin-left: 90px;
+    margin-left: auto;
   }
 
   .navigation__contacts .navigation__item + .navigation__item {
@@ -147,6 +147,8 @@
 
 @media screen and (min-width: 1200px) {
   .navigation__list {
+    display: flex;
+    list-style: none;
     margin-left: 93px;
   }
   .navigation__list.navigation__item + .navigation__item {
