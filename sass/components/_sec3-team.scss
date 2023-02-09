@@ -5,16 +5,76 @@
 }
 
 .team__title {
-  color: var(--primary-text-color);
-  @include font(36px, 700, 1.17, null);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
   text-align: center;
+  // margin-bottom: 50px;
 
-  margin-bottom: 50px;
+  @media screen and (min-width: 320px) {
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.18;
+  }
+
+  @media screen and (min-width: 480px) {
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.18;
+  }
 }
 
 .team__list {
-  display: flex;
-  list-style: none;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media screen and (min-width: 320px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @media screen and (min-width: 480px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.person {
+  width: 270px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  border-radius: 0px 0px 4px 4px;
+  background: var(--primary-white-color);
+
+  @media screen and (min-width: 320px) {
+    width: 320px;
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
 }
 
 .person__title {
@@ -23,7 +83,16 @@
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
-  margin-bottom: 10px;
+
+  @media screen and (min-width: 320px) {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  @media screen and (min-width: 480px) {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
 }
 
 .person__profession {
@@ -32,45 +101,38 @@
   line-height: 1.18;
   text-align: center;
   margin-bottom: 16px;
-}
 
-.person {
-  width: 270px;
-
-  background-color: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
-
-.person + .person {
-  margin-left: 30px;
-}
-
-.person__content {
-  padding: 30px 0;
+  @media screen and (min-width: 480px) {
+    margin-bottom: 16px;
+  }
 }
 
 .person__soc-list {
-  @include flex-align-justify;
-}
+  display: flex;
+  justify-content: center;
+  margin: 16px 32px 30px 32px;
 
-.person__soc-item {
-  width: 44px;
-  height: 44px;
-}
+  @media screen and (min-width: 480px) {
+    padding-bottom: 24px;
+  }
 
-.person__soc-item:not(:last-child) {
-  margin-right: 10px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 0;
+  }
 }
 
 .person__soc-link {
   @include flex-align-justify;
 
-  width: 100%;
-  height: 100%;
-
+  border: none;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
+  margin-right: 10px;
   color: #afb1b8;
 
   transition: background-color var(--tran), color var(--tran);
