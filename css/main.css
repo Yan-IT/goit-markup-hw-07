@@ -1370,13 +1370,14 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
     width: 450px;
   }
 }
 @media screen and (min-width: 1200px) {
   .form-subscribe__email {
     width: 358px;
+    margin-bottom: 0px;
   }
 }
 
