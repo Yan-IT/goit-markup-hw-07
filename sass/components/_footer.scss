@@ -124,6 +124,7 @@
   @media screen and (min-width: 280px) {
     margin-top: 60px;
     margin-right: 0;
+    text-align: center;
   }
 
   @media screen and (min-width: 480px) {
@@ -200,6 +201,7 @@
     // align-items: center;
     // justify-content: center;
     margin-top: 60px;
+    text-align: center;
   }
 
   @media screen and (min-width: 480px) {
@@ -275,7 +277,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     width: 450px;
   }
 
