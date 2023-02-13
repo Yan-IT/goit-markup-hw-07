@@ -195,10 +195,10 @@
 
 .form-subscribe {
   @media screen and (min-width: 280px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
     margin-top: 60px;
   }
 
@@ -222,10 +222,10 @@
 
 .form-subscribe__wrap {
   @media screen and (min-width: 280px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
   }
 
   @media screen and (min-width: 480px) {
@@ -267,7 +267,7 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
-    width: 450px;
+    width: 100%;
   }
 
   @media screen and (min-width: 480px) {
